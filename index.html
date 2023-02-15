@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    <meta charset="utf-8">
+    </meta>
+    <link id="css" rel="preload"
+        href="https://fonts.gstatic.com/s/firacode/v21/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7MOzlojwUKQ.woff"
+        as="font" type="font/woff2" crossorigin>
+    </link>
+    <link id="css" rel="stylesheet" type="text/css" href="https://scorchchamp.github.io/style.css" media="all">
+    </link>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5779624385801311"
+        crossorigin="anonymous" async></script>
+    <script src="https://scorchchamp.github.io/auto-format.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body>
+    <h1>Bitcoin Mining Simulator</h1>
+    <input type="text" id="data" placeholder="Data to mine">
+    <button onclick="mine()">Mine!</button>
+    <br>
+    <p>Difficulty: <span id="difficulty">1</span></p>
+    <p></p><i>The difficulty is often directly connected with the hashrate of the whole mining network. The more miners,
+        the harder it is to mine a block.</i></p>
+    <p><i>The difficulty in this case is the amount of 0's the result hash should start with</i></p>
+    <br>
+    <p>Nonce: <span id="nonce">0</span></p>
+    <i>The nonce is a value that's being changed every hash. The faster a computer can change this, the faster the
+        mining process is. This speed is often expressed in hashrate or hash/second</i>
+    <br><br><br>
+    <p>Result hash: <span id="current-hash">0</span></p>
+    <i>The result hash of all the data combined</i>
+    <br><br>
+    <p>Block found: <span id="block-found">false</span></p>
+    <script src="app.js"></script>
+</body>
+
+</html>
